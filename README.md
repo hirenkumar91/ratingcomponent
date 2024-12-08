@@ -1,4 +1,5 @@
 # Frontend Mentor - Interactive rating component
+# https://ratingcompo.netlify.app/
 
 ![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
 
