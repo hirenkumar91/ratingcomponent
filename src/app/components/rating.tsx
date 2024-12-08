@@ -1,10 +1,14 @@
 import { useState } from "react";
 import styles from "./components.module.css";
 
-export default function Rating({ onRatingChange }) {
-  const [rating, setRating] = useState(null);
+interface RatingProps {
+  onRatingChange: (rating: number) => void;
+}
 
-  const handleRatingClick = (ratingValue) => {
+export default function Rating({ onRatingChange }: RatingProps) {
+  const [rating, setRating] = useState<number | null>(null);
+
+  const handleRatingClick = (ratingValue: number) => {
     setRating(ratingValue);
     onRatingChange(ratingValue);
   };

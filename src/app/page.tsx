@@ -6,15 +6,14 @@ import styles from "./compo.module.css";
 import Submit from "./components/button";
 
 export default function Home() {
-  const [isVisible, setIsVisible] = useState(true);
-  const [selectedRating, setSelectedRating] = useState(null);
+  const [isVisible, setIsVisible] = useState<boolean>(true);
+  const [selectedRating, setSelectedRating] = useState<number | null>(null);
 
-  const handleRatingChange = (rating) => {
+  const handleRatingChange = (rating: number) => {
     setSelectedRating(rating);
   };
 
   const toggleVisibility = () => {
-    // Hide the rating component and show the thank-you component
     setIsVisible(false);
   };
 
