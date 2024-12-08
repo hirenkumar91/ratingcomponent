@@ -1,0 +1,106 @@
+.component {
+  justify-content: center;
+  flex-direction: column;
+  margin: 60% 25% 25% 25%;
+  width: 25rem;
+  background-color: var(--DarkBlue);
+  padding: 2.5rem;
+  border-radius: 1.25rem;
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.component > * {
+  padding-bottom: 1rem;
+}
+
+.component > p {
+  text-align: justify;
+}
+
+.ImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--lightGrey);
+  padding: 0.3125rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  margin-bottom: 1rem;
+}
+
+.ThankYou {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ThankYou > img {
+  width: 10rem;
+  height: auto;
+}
+
+.GivenRating {
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--lightGrey);
+  border-radius: 5rem;
+  color: var(--orange);
+  padding: 5px 20px;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .component {
+    margin: 70% 10% 10% 10%;
+    width: 20rem;
+    padding: 2rem;
+  }
+
+  .ImageContainer {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .ThankYou img {
+    width: 8rem;
+  }
+
+  .GivenRating {
+    padding: 4px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .component {
+    margin: 100% 2% 2% 2%;
+    width: 20rem;
+    padding: 1.5rem;
+  }
+
+  .ImageContainer {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .ThankYou img {
+    width: 7rem;
+  }
+
+  .GivenRating {
+    padding: 3px 12px;
+  }
+
+  .component > p {
+    font-size: 0.875rem;
+  }
+}
